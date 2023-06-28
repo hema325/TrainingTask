@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LuY78hyWCUZyZL3O+v7kL2c06TTk437SbWwJkAB4bPg=",
+  "Hash": "+WWXmTsRvOUFJPUJTqa6DyCHEKG3Liem/MFnFFR7UtM=",
   "Source": "TrainingTask.WebApp",
   "BasePath": "_content/TrainingTask.WebApp",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\TrainingTask.WebApp.styles.css",
+      "Identity": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\scopedcss\\bundle\\TrainingTask.WebApp.styles.css",
       "SourceId": "TrainingTask.WebApp",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/TrainingTask.WebApp",
       "RelativePath": "TrainingTask.WebApp.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\win-x64\\scopedcss\\bundle\\TrainingTask.WebApp.styles.css"
+      "OriginalItemSpec": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\scopedcss\\bundle\\TrainingTask.WebApp.styles.css"
     },
     {
-      "Identity": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\TrainingTask.WebApp.bundle.scp.css",
+      "Identity": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\TrainingTask.WebApp.bundle.scp.css",
       "SourceId": "TrainingTask.WebApp",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/TrainingTask.WebApp",
       "RelativePath": "TrainingTask.WebApp.bundle.scp.css",
       "AssetKind": "All",
@@ -48,7 +48,7 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\win-x64\\scopedcss\\projectbundle\\TrainingTask.WebApp.bundle.scp.css"
+      "OriginalItemSpec": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\obj\\Release\\net6.0\\scopedcss\\projectbundle\\TrainingTask.WebApp.bundle.scp.css"
     },
     {
       "Identity": "D:\\Asp.netCoreMVC\\TrainingTask.WebApp\\TrainingTask.WebApp\\wwwroot\\css\\site.css",

@@ -59,11 +59,11 @@ namespace TrainingTask.WebApp.Controllers
                     await _context.SaveChangesAsync();
 
                     TempData["success"] = success;
-                    return View();
+                    return RedirectToAction(nameof(Add));
                 }
 
                 TempData["error"] = duplicationError;
-                return View();
+                return RedirectToAction(nameof(Add));
             }
 
             var errors = ModelState.Values.Select(v => v.Errors).Where(e => e.Count > 0);
@@ -107,7 +107,7 @@ namespace TrainingTask.WebApp.Controllers
                     await _context.SaveChangesAsync();
 
                     TempData["success"] = success;
-                    return View();
+                    return RedirectToAction(nameof(Edit));
                 }
 
                 TempData["error"] = duplicationError;

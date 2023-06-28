@@ -104,7 +104,8 @@ namespace TrainingTask.WebApp.Controllers
 
             if (ModelState.IsValid)
             {
-                var invoice = _mapper.Map<Invoice>(model);
+                var invoice = await _context.Invoices.FindAsync(model.Id);
+                 invoice = _mapper.Map(model,invoice);
 
                 _context.Invoices.Update(invoice);
                 await _context.SaveChangesAsync();
