@@ -1,0 +1,62 @@
+﻿@model InvoiceDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Invoice Form</h4>
+    <p class="card-description"> Details Invoice </p>
+    <form class="forms-sample">
+      <div class="form-group row">
+        <label asp-for = "Number" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Number" type="text" class="form-control-plaintext" readonly>
+        </div> 
+      </div>
+      <div class="form-group row">
+        <label asp-for="Date" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input value="@Model.Date.ToLongDateString()" type="text" class="form-control-plaintext" readonly > 
+        </div>
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Quantity" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Quantity" type="text" class="form-control-plaintext" readonly>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Price" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Price" class="form-control-plaintext" readonly>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "PaidUp" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "PaidUp" class="form-control-plaintext" readonly>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for="Discount" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="Discount" type="text" class="form-control-plaintext" readonly> 
+        </div>
+      </div>
+      <div class="form-group row">
+        <label asp-for="ClientName" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="ClientName" type="text" class="form-control-plaintext" readonly> 
+         </div>
+        </div>
+        <div class="form-group row">
+        <label asp-for="ItemName" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="ItemName" type="text" class="form-control-plaintext" readonly> 
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

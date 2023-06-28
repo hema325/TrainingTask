@@ -1,0 +1,34 @@
+﻿@model AddCompanyViewModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Company Form</h4>
+    <p class="card-description"> Adding Company </p>
+    <form class="forms-sample" asp-action="Add">
+      <div class="form-group row">
+        <label asp-for="Name" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="Name" type="text" class="form-control" placeholder="Name">
+          <span asp-validation-for="Name" class="text-danger"></span>  
+        </div>
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Notes" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <textarea  asp-for = "Notes" type="text" class="form-control"placeholder="Notes" rows="6"></textarea>
+          <span asp-validation-for="Notes" class="text-danger"></span>
+        </div>  
+      </div>
+      <button type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+    </form>
+  </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
+

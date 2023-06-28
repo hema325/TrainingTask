@@ -1,0 +1,60 @@
+﻿@model AddItemViewModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Item Form</h4>
+    <p class="card-description"> Adding Item </p>
+    <form class="forms-sample" asp-action="Add">
+      <div class="form-group row">
+        <label asp-for = "TypeId" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <select  asp-for = "TypeId" asp-items="@Model.Types" type="text" class="form-select" placeholder="Type">
+              <option value="" selected disabled>select your Type</option>
+          </select>
+          <span asp-validation-for="TypeId" class="text-danger"></span>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for="Name" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="Name" type="text" class="form-control" placeholder="Name">
+          <span asp-validation-for="Name" class="text-danger"></span>
+          <span class="text-danger"></span>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Notes" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <textarea  asp-for = "Notes" type="text" class="form-control"placeholder="Notes" rows="6"></textarea>
+          <span asp-validation-for="Notes" class="text-danger"></span>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "SellingPrice" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "SellingPrice" value="" type="text" class="form-control"placeholder="Selling Price">
+          <span asp-validation-for="SellingPrice" class="text-danger"></span>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "BuyingPrice" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "BuyingPrice" value="" type="text" class="form-control"placeholder="Buying Price">
+          <span asp-validation-for="BuyingPrice" class="text-danger"></span>
+          <span class="text-danger"></span>
+        </div>  
+      </div>
+      <button id="submit" type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+    </form>
+  </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/itemsValidation.js"></script>
+}
+
+

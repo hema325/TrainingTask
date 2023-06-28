@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="card">
+  <div class="card-body">
+      <div class="d-flex justify-content-between">
+          <h4 class="card-title">Invoices</h4>
+          <a asp-action = "Add" class="btn btn-primary rounded">Create New</a>
+      </div>
+     <p class="card-description"> Showing Invoices
+     </p>
+     <table class="table">
+       <thead>
+         <tr>
+           <th>Number</th>
+           <th>Client Name</th>
+           <th>Item Name</th>
+           <th>Price</th>
+           <th>Quantity</th>
+           <th>Discount</th>
+           <th>Date</th>
+           <th>Paid Up</th>
+         </tr>
+       </thead>
+       <tbody>
+       </tbody>
+     </table>
+     <partial name="LoaderPartial" />
+   </div>
+</div>
+<br />
+<div class="card">
+  <div class="card-body">
+     <div class="d-flex justify-content-center align-content-center gap-2">
+         <button id="prev" class="btn btn-outline-primary p-3 d-none">Prev</button>
+         <button id="next" class="btn btn-outline-primary p-3 d-none">Next</button>
+     </div>
+   </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/invoicesIndex.js"></script>
+}
+
+

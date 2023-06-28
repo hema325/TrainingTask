@@ -1,0 +1,50 @@
+﻿@model ItemDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Item Form</h4>
+    <p class="card-description"> Details Item </p>
+    <form class="forms-sample">
+      <div class="form-group row">
+        <label asp-for="Name" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="Name" type="text" class="form-control-plaintext" readonly> 
+        </div>
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Notes" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          @Model.Notes
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "SellingPrice" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "SellingPrice" class="form-control-plaintext" readonly>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "BuyingPrice" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "BuyingPrice" class="form-control-plaintext" readonly>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for="CompanyName" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="CompanyName" type="text" class="form-control-plaintext" readonly> 
+        </div>
+      </div>
+      <div class="form-group row">
+        <label asp-for="TypeName" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input asp-for="TypeName" type="text" class="form-control-plaintext" readonly> 
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+

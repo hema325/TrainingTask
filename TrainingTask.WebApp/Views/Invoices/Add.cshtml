@@ -1,0 +1,84 @@
+﻿@model AddInvoiceViewModel
+@{
+    ViewData["Title"] = "Add";
+}
+
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">Invoice Form</h4>
+    <p class="card-description"> Adding Invoice </p>
+    <form class="forms-sample" asp-action="Add">
+      <div class="form-group row">
+        <label asp-for = "Date" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Date" type="date" class="form-control" value="" placeholder="Date">
+          <span asp-validation-for="Date" class="text-danger"></span>
+        </div>  
+      </div>
+       <div class="form-group row">
+        <label asp-for = "Number" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Number" class="form-control" value="" placeholder="Date" readonly>
+          <span asp-validation-for="Number" class="text-danger"></span>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "ClientId" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <select  asp-for = "ClientId" asp-items="@Model.Clients" type="text" class="form-select" placeholder="Type">
+              <option value="" selected disabled>select your client</option>
+          </select>
+          <span asp-validation-for="ClientId" class="text-danger"></span>
+        </div>  
+      </div>
+       <div class="form-group row">
+        <label asp-for = "ItemId" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <select  asp-for = "ItemId" asp-items="@Model.Items" type="text" class="form-select" placeholder="Type">
+              <option value="" selected disabled>select your item</option>
+          </select>
+          <span asp-validation-for="ItemId" class="text-danger"></span>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Price" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Price" type="text" value="" class="form-control"placeholder="Price">
+          <span asp-validation-for="Price" class="text-danger"></span>
+        </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Quantity" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Quantity" type="text" value="" class="form-control" placeholder="Quantity">
+          <span asp-validation-for="Quantity" class="text-danger"></span>
+         </div>  
+      </div>
+      <div class="form-group row">
+        <label asp-for = "PaidUp" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "PaidUp" type="text" class="form-control"placeholder="Paid Up">
+          <span asp-validation-for="PaidUp" class="text-danger"></span>
+        </div> 
+      </div>
+      <div class="form-group row">
+        <label asp-for = "Discount" class="col-sm-3 col-form-label"></label>
+        <div class="col-sm-9">
+          <input  asp-for = "Discount" type="text" class="form-control"placeholder="Discount">
+          <span asp-validation-for="Discount" class="text-danger"></span>
+        </div>  
+      </div>
+      <button id="submit" type="submit" class="btn btn-gradient-primary me-2">Submit</button>
+    </form>
+  </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        $(function(){
+            $('form input[name="Number"]').val(Math.round(Math.random() * 10000000000));
+        })
+    </script>
+}
+
