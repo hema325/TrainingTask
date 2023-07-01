@@ -12,6 +12,7 @@ namespace TrainingTask.WebApp.Models.Client
         public string Name { get; set; }
 
         [StringLength(24)]
+        [RegularExpression("[\\d\\-\\+\\s]+", ErrorMessage = "Phone Can Only Contain digits, white spaces, plus, minus")]
         public string Phone { get; set; }
 
         [StringLength(450)]

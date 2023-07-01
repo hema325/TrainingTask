@@ -97,7 +97,7 @@ namespace TrainingTask.WebApp.Migrations
                         {
                             Id = 1,
                             Name = "Samsung",
-                            Notes = "Samsung specializes in the production of a wide variety of consumer and industry electronics, including appliances, digital media devices, semiconductors, memory chips, and integrated systems. It has become one of the most-recognizable names in technology and produces about a fifth of South Koreas total exports."
+                            Notes = "Samsung specializes in the production of a wide variety of consumer and industry electronics, including appliances, digital media devices, semiconductors memory chips, and integrated systems. It has become one of the most-recognizable names in technology and produces about a fifth of South Koreas total exports."
                         },
                         new
                         {
@@ -163,10 +163,10 @@ namespace TrainingTask.WebApp.Migrations
                         {
                             Id = 1,
                             ClientId = 1,
-                            Date = new DateTime(2020, 6, 28, 12, 30, 21, 90, DateTimeKind.Local).AddTicks(9630),
+                            Date = new DateTime(2020, 5, 22, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Discount = 3m,
                             ItemId = 1,
-                            Number = "3657710996",
+                            Number = "1111111111",
                             PaidUp = 100m,
                             Price = 300m,
                             Quantity = 3
@@ -175,25 +175,13 @@ namespace TrainingTask.WebApp.Migrations
                         {
                             Id = 2,
                             ClientId = 2,
-                            Date = new DateTime(2022, 6, 28, 12, 30, 21, 90, DateTimeKind.Local).AddTicks(9715),
+                            Date = new DateTime(2023, 5, 5, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Discount = 8m,
                             ItemId = 2,
-                            Number = "2196613588",
+                            Number = "2222222222",
                             PaidUp = 200m,
                             Price = 600m,
                             Quantity = 1
-                        },
-                        new
-                        {
-                            Id = 3,
-                            ClientId = 1,
-                            Date = new DateTime(2025, 6, 28, 12, 30, 21, 90, DateTimeKind.Local).AddTicks(9721),
-                            Discount = 13m,
-                            ItemId = 2,
-                            Number = "2511516670",
-                            PaidUp = 50m,
-                            Price = 600m,
-                            Quantity = 2
                         });
                 });
 

@@ -11,7 +11,7 @@ $(function () {
              <tr>
                 <td>${items[i].name}</td>
                 <td>${items[i].phone}</td>
-                <td>${items[i].address}</td>
+                <td>${items[i].address != null ? items[i].address.substr(0, 50) + (items[i].address.length > 50 ? " . . ." : "") : items[i].address}</td>
                 <td>
                     <a href="clients/details/${items[i].id}" class="btn btn-secondary p-1">Details</a>
                     <a href="clients/edit/${items[i].id}" class="btn btn-primary p-1">Edit</a>
@@ -100,7 +100,7 @@ $(function () {
     $("#prev").click(function () {
         --pageNumber;
         loaderOn();
-        //load();
+        load();
 
     })
 

@@ -19,7 +19,7 @@ namespace TrainingTask.WebApp.Controllers
         private readonly IMapper _mapper;
         #endregion
 
-        #region cros
+        #region ctor
         public ClientsController(IApplicationDbContext context, IMapper mapper)
         {
             _context = context;

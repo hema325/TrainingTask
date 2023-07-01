@@ -1,7 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 using TrainingTask.WebApp.Data;
+using TrainingTask.WebApp.Options;
+using TrainingTask.WebApp.Seeding;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +13,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         builder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+builder.Configuration.AddJsonFile("Seeding.json",false);
+builder.Services.AddOptions<SeedingOption>().Bind(builder.Configuration.GetSection(SeedingOption.Seeding)).ValidateDataAnnotations();
+builder.Services.AddScoped<IModelSeeder, ModelSeeder>();
 
 var app = builder.Build();
 

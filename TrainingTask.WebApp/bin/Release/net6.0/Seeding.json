@@ -1,0 +1,98 @@
+{
+  "Seeding": {
+    "Companies": [
+      {
+        "Id": 1,
+        "Name": "Samsung",
+        "Notes": "Samsung specializes in the production of a wide variety of consumer and industry electronics, including appliances, digital media devices, semiconductors memory chips, and integrated systems. It has become one of the most-recognizable names in technology and produces about a fifth of South Koreas total exports."
+      },
+      {
+        "Id": 2,
+        "Name": "Nvidia",
+        "Notes": "Nvidia Corporation is a technology company known for designing and manufacturing graphics processing units (GPUs). The company was founded in 1993 by Jen-Hsun Jensen Huang, Curtis Priem and Chris Malachowsky and is headquartered in Santa Clara, Calif."
+      }
+    ],
+    "Types": [
+      {
+        "Id": 1,
+        "Name": "smart phone",
+        "Notes": "",
+        "CompanyId":"nb" 
+      },
+      {
+        "Id": 2,
+        "Name": "Graphics Card",
+        "Notes": "",
+        "CompanyId": 2
+      }
+    ],
+    "Items": [
+      {
+        "Id": 1,
+        "Name": "A51",
+        "SellingPrice": 300,
+        "BuyingPrice": 150,
+        "Notes": "Samsung Galaxy A51 is an Android smartphone manufactured by Samsung Electronics as part of its Galaxy A series. It was announced and released in December 2019. The phone has a Super AMOLED FHD+ 6.5 in display, a 48 MP wide, 12 MP ultrawide, 5 MP depth, and 5 MP macro camera, a 4000 mAh battery, and an optical in-screen fingerprint sensor.",
+        "TypeId": 1
+      },
+      {
+        "Id": 2,
+        "Name": "RTX 40 Series",
+        "SellingPrice": 600,
+        "BuyingPrice": 350,
+        "Notes": "NVIDIA® GeForce RTX™ 40 Series GPUs are beyond fast for gamers and creators. They're powered by the ultra-efficient NVIDIA Ada Lovelace architecture which delivers a quantum leap in both performance and AI-powered graphics. Experience lifelike virtual worlds with ray tracing and ultra-high FPS gaming with the lowest latency. Discover revolutionary new ways to create and unprecedented workflow acceleration.",
+        "TypeId": 2
+      }
+    ],
+    "Clients": [
+      {
+        "Id": 1,
+        "Name": "Abby",
+        "Phone": "+1 202-918-2132",
+        "Address": "7666 Smitham Landing, Suite 918, 50682-8733, Reingerberg, Washington, United States"
+      },
+      {
+        "Id": 2,
+        "Name": "Abeni",
+        "Phone": "+1 505-646-7697",
+        "Address": "049 Steuber Pines, Suite 946, 22779, Gislasonton, Rhode Island, United States"
+      }
+    ],
+    "Invoices": [
+      {
+        "Id": 1,
+        "Date": "5/22/2020",
+        "Quantity": 3,
+        "Price": 300,
+        "PaidUp": 100,
+        "Discount": 3,
+        "Number": "1111111111",
+        "ItemId": 1,
+        "ClientId": 1
+      },
+      {
+        "Id": 2,
+        "Date": "5/5/2023",
+        "Quantity": 1,
+        "Price": 600,
+        "PaidUp": 200,
+        "Discount": 8,
+        "Number": "2222222222",
+        "ItemId": 2,
+        "ClientId": 2
+      }
+    ],
+    "Units": [
+      {
+        "Id": 1,
+        "Name": "Pitch",
+        "Notes": "unit of typeface equal to number of characters per inch"
+      },
+      {
+        "Id": 2,
+        "Name": "Vara",
+        "Notes": "unit of linear measure of between 33 and 43 inches"
+      }
+    ]
+  }
+}

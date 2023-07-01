@@ -7,7 +7,7 @@
 $(function () {
 
     let pageNumber = 1;
-    const pageSize = 10;
+    const pageSize = 5;
 
     function addItems(items) {
         for (let i = 0; i < items.length; ++i)

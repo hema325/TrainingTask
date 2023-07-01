@@ -3,6 +3,7 @@
 
 
 
+
 $(function () {
 
     let pageNumber = 1;
@@ -13,7 +14,7 @@ $(function () {
             $("table tbody").append(`
              <tr>
                 <td>${items[i].name}</td>
-                <td class=" text-wrap">${items[i].notes != null ? items[i].notes.substr(0, 50) + (items[i].notes.length > 50 ? " . . ." : "") : items[i].notes}</td >
+                <td class=" text-wrap">${items[i].notes != null ? items[i].notes.substr(0, 50) + (items[i].notes.length > 50 ? " . . ." : "") : "No Notes"}</td >
                 <td>
                     <a href="units/details/${items[i].id}" class="btn btn-secondary p-1">Details</a>
                     <a href="units/edit/${items[i].id}" class="btn btn-primary p-1">Edit</a>

@@ -543,3 +543,4 @@ D:\Asp.netCoreMVC\TrainingTask.WebApp\TrainingTask.WebApp\obj\Release\net6.0\ref
 D:\Asp.netCoreMVC\TrainingTask.WebApp\TrainingTask.WebApp\obj\Release\net6.0\TrainingTask.WebApp.pdb
 D:\Asp.netCoreMVC\TrainingTask.WebApp\TrainingTask.WebApp\obj\Release\net6.0\TrainingTask.WebApp.genruntimeconfig.cache
 D:\Asp.netCoreMVC\TrainingTask.WebApp\TrainingTask.WebApp\obj\Release\net6.0\ref\TrainingTask.WebApp.dll
+D:\Asp.netCoreMVC\TrainingTask.WebApp\TrainingTask.WebApp\bin\Release\net6.0\Seeding.json

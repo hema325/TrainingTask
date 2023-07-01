@@ -18,8 +18,6 @@ $(function () {
                 <td>${items[i].price}</td>
                 <td>${items[i].quantity}</td>
                 <td>${Number(items[i].discount)}%</td>
-                <td>${new Date(items[i].date).toDateString()}</td>
-                <td>${Number(items[i].paidUp)}</td>
                 <td>
                     <a href="/invoices/details/${items[i].id}" class="btn btn-secondary p-1">Details</a>
                     <a href="/invoices/edit/${items[i].id}" class="btn btn-primary p-1">Edit</a>
@@ -109,7 +107,6 @@ $(function () {
         --pageNumber;
         loaderOn();
         load();
-
     })
 
     $("#next").click(function () {
