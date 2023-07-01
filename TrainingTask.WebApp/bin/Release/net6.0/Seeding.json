@@ -17,7 +17,7 @@
         "Id": 1,
         "Name": "smart phone",
         "Notes": "",
-        "CompanyId":"nb" 
+        "CompanyId": 1 
       },
       {
         "Id": 2,
