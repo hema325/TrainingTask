@@ -13,7 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
         builder.MigrationsAssembly(typeof(ApplicationDbContext).Assembly.FullName)));
 builder.Services.AddScoped<IApplicationDbContext>(provider => provider.GetRequiredService<ApplicationDbContext>());
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
-builder.Configuration.AddJsonFile("Seeding.json",false);
+builder.Configuration.AddJsonFile("seeding.json",false);
 builder.Services.AddOptions<SeedingOption>().Bind(builder.Configuration.GetSection(SeedingOption.Seeding)).ValidateDataAnnotations();
 builder.Services.AddScoped<IModelSeeder, ModelSeeder>();
 
