@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 using TrainingTask.WebApp.Data;
-using TrainingTask.WebApp.Options;
+using TrainingTask.WebApp.Options.Seeding;
 using TrainingTask.WebApp.Seeding;
 
 var builder = WebApplication.CreateBuilder(args);

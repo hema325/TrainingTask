@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using TrainingTask.WebApp.DTOs;
-using TrainingTask.WebApp.Models.Type;
+using TrainingTask.WebApp.Models.Types;
 
 namespace TrainingTask.WebApp.Profiles
 {

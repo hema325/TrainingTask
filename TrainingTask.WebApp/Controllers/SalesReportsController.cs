@@ -6,7 +6,7 @@ using TrainingTask.WebApp.Common.Models;
 using TrainingTask.WebApp.Data;
 using TrainingTask.WebApp.DTOs;
 using TrainingTask.WebApp.Entities;
-using TrainingTask.WebApp.Models;
+using TrainingTask.WebApp.Models.SalesReports;
 
 namespace TrainingTask.WebApp.Controllers
 {

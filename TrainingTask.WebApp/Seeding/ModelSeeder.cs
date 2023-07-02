@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using TrainingTask.WebApp.Entities;
-using TrainingTask.WebApp.Options;
+using TrainingTask.WebApp.Options.Seeding;
 
 namespace TrainingTask.WebApp.Seeding
 {

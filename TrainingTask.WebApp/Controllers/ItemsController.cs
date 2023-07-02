@@ -9,7 +9,7 @@ using TrainingTask.WebApp.Common.Models;
 using TrainingTask.WebApp.Data;
 using TrainingTask.WebApp.DTOs;
 using TrainingTask.WebApp.Entities;
-using TrainingTask.WebApp.Models.Item;
+using TrainingTask.WebApp.Models.Items;
 
 namespace TrainingTask.WebApp.Controllers
 {

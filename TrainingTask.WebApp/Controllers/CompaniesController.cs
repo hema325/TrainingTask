@@ -8,7 +8,7 @@ using TrainingTask.WebApp.Common.Models;
 using TrainingTask.WebApp.Data;
 using TrainingTask.WebApp.DTOs;
 using TrainingTask.WebApp.Entities;
-using TrainingTask.WebApp.Models.Company;
+using TrainingTask.WebApp.Models.Companies;
 
 namespace TrainingTask.WebApp.Controllers
 {

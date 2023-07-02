@@ -21,7 +21,7 @@ namespace TrainingTask.WebApp.CustomAnnotations
                 return ValidationResult.Success;
 
             var errorMessage = $"{validationContext.DisplayName} Must Be Less Than Or Equal To {OtherPropertyName}";
-            return new ValidationResult(errorMessage);
+            return new ValidationResult(ErrorMessage ?? errorMessage);
         }
     }
 }

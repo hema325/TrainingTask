@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using TrainingTask.WebApp.DTOs;
 using TrainingTask.WebApp.Entities;
-using TrainingTask.WebApp.Models.Item;
+using TrainingTask.WebApp.Models.Items;
 
 namespace TrainingTask.WebApp.Profiles
 {
