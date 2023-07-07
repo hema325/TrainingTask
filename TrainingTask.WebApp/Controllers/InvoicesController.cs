@@ -134,7 +134,7 @@ namespace TrainingTask.WebApp.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            return await _context.Invoices.PaginateWithProjectionAsync<Invoice,InvoiceDTO>(_mapper, page, size);
+            return await _context.Invoices.ProjectTo<InvoiceDTO>(_mapper.ConfigurationProvider).PaginateAsync(page, size);
         }
 
         [HttpDelete]

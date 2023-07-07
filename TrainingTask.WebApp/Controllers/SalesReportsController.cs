@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc;
 using System.ComponentModel.DataAnnotations;
 using TrainingTask.WebApp.Common.Mapping;
@@ -39,7 +40,7 @@ namespace TrainingTask.WebApp.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            return await _context.Invoices.Where(i => i.Date > model.From && i.Date < model.To).PaginateWithProjectionAsync<Invoice, SalesReportDTO>(_mapper, page, size);
+            return await _context.Invoices.Where(i => i.Date > model.From && i.Date < model.To).ProjectTo<SalesReportDTO>(_mapper.ConfigurationProvider).PaginateAsync(page, size);
         }
         #endregion
     }

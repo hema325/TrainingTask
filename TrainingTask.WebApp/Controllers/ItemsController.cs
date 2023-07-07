@@ -152,7 +152,7 @@ namespace TrainingTask.WebApp.Controllers
             if (!ModelState.IsValid)
                 return BadRequest();
 
-            return await _context.Items.PaginateWithProjectionAsync<Item, ItemDTO>(_mapper, page, size);
+            return await _context.Items.ProjectTo<ItemDTO>(_mapper.ConfigurationProvider).PaginateAsync(page, size);
         }
 
         [HttpDelete]

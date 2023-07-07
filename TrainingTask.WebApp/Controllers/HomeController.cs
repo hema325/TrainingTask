@@ -17,6 +17,7 @@ namespace TrainingTask.WebApp.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("message", "params");
             return View();
         }
 
