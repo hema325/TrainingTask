@@ -1,13 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System.ComponentModel.DataAnnotations;
 using TrainingTask.WebApp.Common.Mapping;
 using TrainingTask.WebApp.Controllers;
 using TrainingTask.WebApp.CustomAnnotations;
+using TrainingTask.WebApp.Entities;
 
 namespace TrainingTask.WebApp.Models.Items
 {
-    public class ItemDetailsViewModel
+    public class ItemDetailsViewModel: IMapFrom<Item>
     {
         public int Id { get; set; }
 
@@ -27,5 +29,13 @@ namespace TrainingTask.WebApp.Models.Items
 
         [Display(Name = "Company Name")]
         public string CompanyName { get; set; }
+
+
+        public void Mapping(Profile profile)
+        {
+            profile.CreateMap<Item, ItemDetailsViewModel>()
+                .ForMember(model => model.TypeName, options => options.MapFrom(item => item.Type.Name))
+                .ForMember(model => model.CompanyName, options => options.MapFrom(Item => Item.Type.Company.Name));
+        }
     }
 }

@@ -1,8 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using AutoMapper;
+using System.ComponentModel.DataAnnotations;
+using TrainingTask.WebApp.Common.Mapping;
+using TrainingTask.WebApp.Entities;
 
 namespace TrainingTask.WebApp.Models.Invoices
 {
-    public class InvoiceDetailsViewModel
+    public class InvoiceDetailsViewModel: IMapFrom<Invoice>
     {
         public int Id { get; set; }
         public DateTime Date { get; set; }
@@ -18,5 +21,14 @@ namespace TrainingTask.WebApp.Models.Invoices
         public string ItemName { get; set; }
 
         public string Number { get; set; }
+
+
+
+        public void Mapping(Profile profile)
+        {
+            profile.CreateMap<Invoice, InvoiceDetailsViewModel>()
+                .ForMember(model => model.ClientName, options => options.MapFrom(invoice => invoice.Client.Name))
+                .ForMember(model => model.ItemName, options => options.MapFrom(invoice => invoice.Item.Name));
+        }
     }
 }
